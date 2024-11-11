@@ -9,7 +9,7 @@ import {
   View,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { isAfter, parse } from 'date-fns';
+import { format, isAfter, parse, toDate } from 'date-fns';
 
 import { Button } from '@app/components';
 import { NavigationProp } from 'src/types/navigation';
@@ -37,6 +37,7 @@ const Home = () => {
   const renderItem = ({ item }: { item: Todo }) => {
     return (
       <TouchableOpacity
+        testID={`todo-${item.id}`}
         style={[styles.card, { backgroundColor: isDue(item.dueDate) ? '#add8e6' : '#fff' }]}
         onPress={() => navigation.navigate('Todo', { todo: item })}
       >
@@ -44,6 +45,7 @@ const Home = () => {
           <Text style={styles.title}>{item.title}</Text>
           <Text style={styles.dueDate}>Due: {item.dueDate}</Text>
           <View
+            testID={`todo-status-${item.id}`}
             style={[
               styles.statusBadge,
               { backgroundColor: item.status === 'Completed' ? 'green' : 'orange' },
@@ -69,6 +71,7 @@ const Home = () => {
   return (
     <SafeAreaView>
       <TextInput
+        testID="search"
         style={styles.input}
         value={search}
         placeholder="Search title"
@@ -145,7 +148,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 12,
     borderWidth: 1,
     padding: 10,
-    marginBottom: 20
+    marginBottom: 20,
   },
 });
 

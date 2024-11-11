@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo Screen should matches the snapshot 1`] = `
+<RNCSafeAreaView
+  edges={
+    {
+      "bottom": "additive",
+      "left": "additive",
+      "right": "additive",
+      "top": "additive",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "gap": 12,
+        "marginVertical": 12,
+      }
+    }
+  >
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="Enter description"
+      style={
+        {
+          "borderWidth": 1,
+          "height": 40,
+          "marginHorizontal": 12,
+          "padding": 10,
+        }
+      }
+      testID="title-input"
+      value=""
+    />
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="Due date (MM/DD/YYYY)"
+      style={
+        {
+          "borderWidth": 1,
+          "height": 40,
+          "marginHorizontal": 12,
+          "padding": 10,
+        }
+      }
+      testID="due-date-input"
+      value="11/11/2024"
+    />
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 5,
+              "marginHorizontal": 10,
+              "padding": 15,
+            },
+            {
+              "backgroundColor": "green",
+            },
+          ]
+        }
+        testID="selection-Pending"
+      >
+        <Text
+          style={
+            {
+              "color": "white",
+              "fontSize": 18,
+            }
+          }
+        >
+          Pending
+        </Text>
+      </View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 5,
+              "marginHorizontal": 10,
+              "padding": 15,
+            },
+            {
+              "backgroundColor": "white",
+            },
+          ]
+        }
+        testID="selection-In Progress"
+      >
+        <Text
+          style={
+            {
+              "color": "black",
+              "fontSize": 18,
+            }
+          }
+        >
+          In Progress
+        </Text>
+      </View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 5,
+              "marginHorizontal": 10,
+              "padding": 15,
+            },
+            {
+              "backgroundColor": "white",
+            },
+          ]
+        }
+        testID="selection-Completed"
+      >
+        <Text
+          style={
+            {
+              "color": "black",
+              "fontSize": 18,
+            }
+          }
+        >
+          Completed
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderRadius": 5,
+            "marginHorizontal": 10,
+            "padding": 15,
+          },
+          {
+            "backgroundColor": "gray",
+          },
+        ]
+      }
+      testID="add-edit-todo"
+    >
+      <Text
+        style={
+          {
+            "color": "black",
+            "fontSize": 20,
+          }
+        }
+      >
+        Add
+      </Text>
+    </View>
+  </View>
+</RNCSafeAreaView>
+`;

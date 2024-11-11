@@ -58,12 +58,14 @@ const Todo = () => {
     <SafeAreaView>
       <View style={styles.container}>
         <TextInput
+        testID='title-input'
           style={styles.input}
           value={description}
           placeholder="Enter description"
           onChangeText={setDescription}
         />
         <TextInput
+        testID='due-date-input'
           style={styles.input}
           value={dueDate}
           placeholder="Due date (MM/DD/YYYY)"
